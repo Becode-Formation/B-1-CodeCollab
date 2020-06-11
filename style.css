@@ -9,12 +9,12 @@ body {
     margin: 0 auto;
 }
 
-h1, h2{
-    font-family: sans-serif;
+h1, h2, h4, h3, h5{
+    font-family: Ubuntu, sans-serif;
 }
 
 h2{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 a {
@@ -89,7 +89,7 @@ nav {
     font-size: 19px;
     color: #FFF;
     font-weight: 500;
-    padding: 13px 40px;
+    padding: 13px 30px;
 }
 
 .button--plans, .button--start{
@@ -126,6 +126,8 @@ h1{
     padding-right: 20px;
     align-self: baseline;
     padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 20px;
     border-right: 1px solid #000;
 }
@@ -142,13 +144,18 @@ h1{
 }
 
 
-
 h4{
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .wrapper div:last-child {
     border-right: none;
+}
+
+.wrapper p {
+    color: #ACB0B6;
+    font-family: Ubuntu, sans-serif;
 }
 
 /* PRESENTATION */
@@ -165,8 +172,9 @@ h4{
 }
 
 .presentation p:nth-child(3){
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 85px;
+    font-family: Ubuntu, sans-serif;
 }
 
 .presentation img {
@@ -184,6 +192,11 @@ h4{
 
 .paid>h2, .paid>p{
     text-align: center;
+}
+
+.paid>h2 {
+    font-weight: 400;
+    font-size: 32px;
 }
 
 
@@ -210,7 +223,7 @@ h4{
 .plan>p:last-child{
     font-family: serif;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .plan__hosted>img {
@@ -226,6 +239,11 @@ h4{
 
 }
 
+.plan h3{
+    font-weight: 400;
+    font-size: 25px;
+}
+
 
 /* Présentation client*/
 
@@ -234,10 +252,14 @@ h4{
     padding: 70px 0;
 }
 
+.who h2 {
+    font-size : 33px;
+}
+
 .who>p{
     width: 710px;
     margin: auto;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.9rem;
     padding-bottom: 60px;
 }
@@ -255,7 +277,7 @@ h4{
 }
 
 .formulaire h1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 300;
     margin: 0 auto;
     text-align: center;
@@ -265,7 +287,8 @@ h4{
     font-size: 16px;
     line-height: 2rem;
     width: 35%;
-    margin: 30px auto;
+    margin: 20px auto;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -277,10 +300,11 @@ h4{
     height: 410px;
     margin: 0 auto;
     text-align: center;
+    font-family: Ubuntu, sans-serif;
 }
 
 form>div {
-    font-weight: bold;
+    font-weight: 500;
     margin: 25px auto;
 }
 
@@ -309,11 +333,11 @@ form>p{
 .safe{
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 .safe p, .safe a{
     color: rgb(100, 101, 104);
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px auto;
 }
 
@@ -363,9 +387,16 @@ footer {
     width: max-content;
 }
 
-.footer__logo, footer p {
+.footer__logo{
     text-align: center;
     padding: 15px;
     font-size: 14px;
     font-weight: lighter;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 1.4rem;
 }
