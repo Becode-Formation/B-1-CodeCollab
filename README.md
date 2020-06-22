@@ -6,10 +6,16 @@ Le site web ou la template, est une site de service collaboratif pour des organi
 ### Technologie utilisée : 
    - HTML 
    - CSS
-### Temps de développement : 
+   - Sass ( à partir de la v2)
+### Temps de développement :computer: : 
    - *Deux* jours
+   - v2 *1* jour
+
+### Devlog :
+   - V1 *11/06/2020*
+   - v2 *22/06/2020* Convertion en Sass
 ### Développé par : 
-   - @JackRob
+   - @JackRob :+1:
   
 ### Un exercice de : 
   - @BeCode

@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/* DRY */
+.container, h1, .formulaire h1, .form__all, .categorie, .footer__logo, footer p:last-child {
+  margin: 0 auto;
+}
+
+/* BODY BASE */
+body {
+  color: #34383B;
+  background: #E9EDF2;
+  margin: 0;
+}
+
+.container {
+  width: 1120px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Ubuntu, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Ubuntu, sans-serif;
+}
+
+/* BUTTON */
+.button--30, .button--plans, .button--start {
+  color: #FFF;
+  font-weight: 500;
+}
+
+.button {
+  background: #3F9BF8;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  border-radius: 5px;
+}
+
+.button--try {
+  color: #FFF;
+  border-radius: 5px 0 0 5px;
+  float: left;
+  border-right: none;
+}
+
+.button--sign {
+  background: #FFF;
+  border-radius: 0 5px 5px 0;
+}
+
+.button--30, .button--plans, .button--start {
+  font-size: 19px;
+  padding: 13px 30px;
+}
+
+.button--plans, .button--start {
+  font-size: 14px;
+  padding: 6px 20px;
+}
+
+.button--start {
+  font-size: 15px;
+  margin: 10px;
+}
+
+/* HEADER*/
+.active {
+  color: #8E96A6;
+}
+
+/* MENU */
+.menu {
+  padding: 10px;
+}
+
+.menu__left > img {
+  width: 220px;
+  float: left;
+}
+
+nav, ul, .menu, .plans, .categorie, .categorie > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav {
+  margin-bottom: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu, .logo, .connexion {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li {
+  padding: 0 12px;
+  list-style: none;
+}
+
+ul {
+  margin-right: 45px;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+/* Grille presentation du Header */
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr 1fr 1.3fr;
+      grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+  background: #3F4655;
+  padding: 0;
+}
+
+.wrapper div {
+  text-align: center;
+  color: #FFF;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  padding: 30px 50px 20px;
+  border-right: 1px solid #000;
+}
+
+.wrapper div:last-child {
+  border-right: none;
+}
+
+.wrapper p {
+  color: #ACB0B6;
+  font-family: Ubuntu, sans-serif;
+}
+
+.tracking img {
+  padding-top: 4px;
+}
+
+.collaboration img {
+  padding-top: 42px;
+}
+
+.management img {
+  padding-top: 24px;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+/* PRESENTATION */
+.presentation {
+  text-align: center;
+}
+
+.presentation p:first-child {
+  width: 50%;
+  margin: 50px auto;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.presentation p:nth-child(3) {
+  font-size: 14px;
+  margin-bottom: 85px;
+  font-family: Ubuntu, sans-serif;
+}
+
+.presentation img {
+  width: 60%;
+  -webkit-box-shadow: 0px 0px 15px 0.1px rgba(0, 0, 0, 0.596);
+          box-shadow: 0px 0px 15px 0.1px rgba(0, 0, 0, 0.596);
+}
+
+/* Formule choix*/
+.paid {
+  width: 100%;
+  background: #FFF;
+  padding: 75px 0;
+}
+
+.paid > h2, .paid > p {
+  text-align: center;
+}
+
+.paid > h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.paid > p {
+  font-size: 20px;
+  line-height: 2.1rem;
+  width: 763px;
+  margin: auto;
+}
+
+.plans {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.plan {
+  text-align: center;
+  padding: 20px 0;
+  line-height: 2rem;
+  width: 50%;
+}
+
+.plan > p:nth-child(3) {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.plan > p:last-child {
+  font-family: serif;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.plan h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.plan__hosted {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan__hosted > img {
+  margin-bottom: 12px;
+}
+
+/* Présentation client*/
+.who {
+  text-align: center;
+  padding: 70px 0;
+}
+
+.who h2 {
+  font-size: 33px;
+}
+
+.who > p {
+  width: 710px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.9rem;
+  padding-bottom: 60px;
+}
+
+.logos > img {
+  padding: 0 10px;
+}
+
+/* Formulaire inscription */
+.formulaire {
+  background: #FFF;
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+
+.formulaire h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.formulaire p:nth-child(2) {
+  text-align: center;
+  font-size: 16px;
+  line-height: 2rem;
+  width: 35%;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+
+.forms__all {
+  text-align: center;
+  margin: 0 auto;
+  font-family: Ubuntu, sans-serif;
+  background: #E9EDF2;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  border-radius: 5px;
+  width: 480px;
+  height: 410px;
+}
+
+form > div {
+  font-weight: 500;
+  margin: 25px auto;
+}
+
+form > div > input {
+  color: grey;
+  font-weight: 400;
+  font-size: 16px;
+  width: 413px;
+  height: 40px;
+}
+
+form > div > label {
+  float: left;
+  padding-left: 28px;
+}
+
+form p {
+  padding-bottom: 30px;
+}
+
+.safe {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.safe p {
+  color: #646568;
+  font-size: 12px;
+  margin: 5px auto;
+}
+
+.safe a {
+  color: #646568;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background: #3F4655;
+  padding: 50px 0;
+  color: #B0B5BF;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 1.4rem;
+}
+
+footer p:last-child {
+  width: 90%;
+}
+
+.footer__logo {
+  text-align: center;
+  width: 90%;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.categorie {
+  width: 90%;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+.categorie > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0 15px;
+}
+
+.categorie > div > h5 {
+  font-weight: bold;
+  color: #93989F;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.categorie > div > a {
+  color: #FFF;
+  padding: 5px 0;
+  font-weight: 500;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+/*# sourceMappingURL=style.css.map */

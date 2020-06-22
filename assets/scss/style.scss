@@ -1,0 +1,431 @@
+// Color Variables
+$colorOne: #FFF;
+$colorTwo: #E9EDF2;
+$colorThree: #3F4655;
+$colorBtn: #3F9BF8;
+
+// Font variables
+$fontFamily: Ubuntu, sans-serif;
+$fontWOne: 400;
+$fontWTwo: 500;
+
+$marginA: 0 auto;
+
+@mixin text-center {
+    text-align: center;
+}
+
+/* DRY */
+
+.container, h1, .formulaire h1, .form__all, .categorie, .footer__logo, footer p:last-child {
+    margin: $marginA;
+}
+
+/* BODY BASE */
+body {
+    color: #34383B;
+    background: $colorTwo;
+    margin: 0;
+}
+
+.container{
+    width: 1120px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $fontFamily;
+}
+
+h2 {
+    font-weight: $fontWOne;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: $fontFamily;
+}
+
+
+
+/* BUTTON */
+
+%button-font-weight {
+    color: $colorOne;
+    font-weight: 500;
+}
+
+.button {
+    background: #3F9BF8;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 5px;
+    &--try {
+        color: $colorOne;
+        border-radius: 5px 0 0 5px;
+        float: left;
+        border-right: none;
+    }
+    &--sign {
+        background: #FFF;
+        border-radius: 0 5px 5px 0;
+    }
+    &--30, &--plans, &--start{
+        @extend %button-font-weight;
+        font-size: 19px;
+        padding: 13px 30px;
+    }
+
+    &--plans, &--start {
+        @extend %button-font-weight;
+        font-size: 14px;
+        padding: 6px 20px;
+    }
+
+    &--start {
+        font-size: 15px;
+         margin: 10px;
+    }
+}
+
+
+/* HEADER*/
+
+.active {
+    color: #8E96A6;
+}
+
+/* MENU */
+.menu {
+    padding: 10px;
+    
+    &__left>img{
+        width: 220px;
+        float: left;
+    }
+}
+
+nav, ul, .menu, .plans, .categorie, .categorie>div{
+    display: flex;
+}
+
+nav {
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.menu, .logo, .connexion{
+    align-items: center;
+}
+
+li {
+    padding: 0 12px;
+    list-style: none;
+}
+
+ul {
+    margin-right: 45px;
+    padding: 0;
+}
+
+h1 {
+    @include text-center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+/* Grille presentation du Header */
+
+.wrapper {
+    display: grid;
+    grid-template-columns:  1.3fr 1fr 1fr 1.3fr;
+    background: $colorThree;
+    padding: 0;
+
+    div{
+        @include text-center;
+        color: $colorOne;
+        align-self: baseline;
+        padding: 30px 50px 20px;
+        border-right: 1px solid #000;
+        &:last-child{
+            border-right: none;
+        }
+    }
+
+    p{
+        color: #ACB0B6;
+        font-family: $fontFamily;
+    }
+}
+
+.tracking img {
+    padding-top: 4px;
+}
+
+.collaboration img {
+    padding-top: 42px;
+}
+
+.management img {
+    padding-top: 24px;
+}
+
+h4 {
+    font-weight: $fontWTwo;
+}
+
+
+/* PRESENTATION */
+
+.presentation {
+   @include text-center;
+   p{
+        &:first-child{
+            width: 50%;
+            margin: 50px auto;
+            font-size: 20px;
+            line-height: 2rem;
+        }
+
+        &:nth-child(3){
+            font-size: 14px;
+            margin-bottom: 85px;
+            font-family: $fontFamily;
+        }
+    }
+
+    img {
+         width: 60%;
+         box-shadow: 0px 0px 15px 0.1px rgba(0, 0, 0, 0.596);
+    }
+}
+
+/* Formule choix*/
+
+.paid{
+    width: 100%;
+    background: #FFF;
+    padding: 75px 0;
+
+    &>h2, &>p{
+        @include text-center;
+    }
+
+    &>h2{
+        font-weight: $fontWOne;
+        font-size: 32px;
+    }
+
+    &>p {
+        font-size: 20px;
+        line-height: 2.1rem;
+        width: 763px;
+        margin: auto;
+    }
+    
+}
+
+.plans {
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.plan {
+    @include text-center;
+    padding: 20px 0;
+    line-height: 2rem;
+    width: 50%;
+
+    &>p {
+        
+        &:nth-child(3) {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        &:last-child{
+        font-family: serif;
+        font-style: italic;
+         font-size: 1.1rem;
+         }
+    }
+
+    h3 {
+        font-weight: $fontWOne;
+        font-size: 25px;
+    }
+
+    &__hosted {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        &>img {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+/* Présentation client*/
+
+.who {
+    @include text-center;
+    padding: 70px 0;
+
+    h2 {
+        font-size: 33px;
+    }
+
+    &>p{
+        width: 710px;
+        margin: auto;
+        font-size: 20px;
+        line-height: 1.9rem;
+        padding-bottom: 60px;
+    }
+}
+
+.logos {
+    &>img {
+        padding: 0 10px;
+    }
+}
+
+/* Formulaire inscription */
+
+.formulaire {
+    background: $colorOne;
+    padding-top: 65px;
+    padding-bottom: 30px;
+
+    h1 {
+        @include text-center;
+        font-size: 40px;
+        font-weight: 300;
+        margin: $marginA;
+    }
+
+    p {
+        &:nth-child(2) {
+            @include text-center;
+            font-size: 16px;
+            line-height: 2rem;
+            width: 35%;
+            margin: 20px auto;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.forms {
+
+    &__all {
+         @include text-center;
+         margin: $marginA;
+        font-family: $fontFamily;
+        background: #E9EDF2;
+        border: 1px solid rgba(0, 0, 0, 0.404);
+        border-radius: 5px;
+        width: 480px;
+        height: 410px;
+    }
+    
+}
+
+form {
+    & > div {
+    font-weight: 500;
+    margin: 25px auto; 
+
+        & > input {
+            color: grey;
+            font-weight: 400;
+            font-size: 16px;
+            width: 413px;
+            height: 40px;
+        }
+
+        & > label {
+            float: left;
+            padding-left: 28px;
+        }
+    }
+
+    p {
+        padding-bottom: 30px;
+    }
+}
+
+.safe {
+    @include text-center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    
+    p {
+        color: rgb(100, 101, 104);
+        font-size: 12px;
+        margin: 5px auto;
+    }
+
+    a {
+        color: #646568;
+        text-decoration: underline;
+    }
+}
+
+/* FOOTER */
+
+
+footer {
+        background: $colorThree;
+        padding: 50px 0;
+        color: #B0B5BF;
+
+        p {
+            @include text-center;
+            font-size: 12px;
+            font-weight: lighter;
+            line-height: 1.4rem;
+            &:last-child {
+            width: 90%;
+            }
+        }
+}
+
+.footer {
+    &__logo {
+        @include text-center;
+        width: 90%;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+}
+
+.categorie {
+    width: 90%;
+    font-size: 14px;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    &>div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0 15px;
+        &>h5 {
+            font-weight: bold;
+            color: #93989F;
+            margin: 6px 0;
+            font-size: 14px;
+        }
+
+        &>a {
+            color: $colorOne;
+            padding: 5px 0;
+            font-weight: $fontWTwo;
+            width: max-content;
+        }
+    }
+}
+
+
